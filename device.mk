@@ -21,6 +21,11 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# DepROM speaker tuning (stereo path: top EAR PA +6 dB, bottom RX_RX2 -7 dB).
+# Listed before the vendor blobs so it wins over the stock copy.
+PRODUCT_COPY_FILES += \
+    vendor/deprom/audio/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp.xml
+
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sapphire/sapphire-vendor.mk)
 
