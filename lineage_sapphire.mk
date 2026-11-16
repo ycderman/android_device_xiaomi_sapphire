@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/sapphire/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# DepROM
+$(call inherit-product, vendor/deprom/config/deprom.mk)
+
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
 
