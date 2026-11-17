@@ -23,7 +23,7 @@ $(call inherit-product, vendor/deprom/config/deprom.mk)
 # Extra Stuffs
 TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 BUILD_BCR := false
 TARGET_INCLUDE_ACCORD := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
