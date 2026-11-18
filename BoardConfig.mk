@@ -180,6 +180,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=4e00000.dwc3
 
 BOARD_KERNEL_CMDLINE := \
+    firmware_class.path=/vendor/firmware_mnt/image \
     kasan=off \
     disable_dma32=on \
     qcom_geni_serial.con_enabled=0 \
