@@ -11,7 +11,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.00342131</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.00353</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -194,8 +194,8 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>3.5</item>
-        <item>7.7</item>
+        <item>7.8</item>
+        <item>7.8</item>
         <item>11.9</item>
         <item>16.1</item>
         <item>20.2</item>
