@@ -488,4 +488,7 @@
 
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+    <!-- DepDroid: a manual brightness change while auto-brightness is on lasts until the screen
+         has been off for 30 s (stock 5 min), then auto-brightness takes over again. -->
+    <integer name="config_autoBrightnessShortTermModelTimeout">30000</integer>
 </resources>
