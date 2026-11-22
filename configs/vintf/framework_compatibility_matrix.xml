@@ -1,4 +1,14 @@
 <compatibility-matrix version="5.0" type="framework">
+    <!-- HIDL provider in the audio HAL: btaudio_offload_if reads the A2DP
+         offload codec config from its session. -->
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
         <version>6</version>
